@@ -10,18 +10,6 @@ $(".toggle-button").click(function() {
   $(".nav-links").toggleClass("active");
 })
 
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-
-  if(scroll >= 100) {
-    $("nav").addClass("expanded");
-
-  } else {
-    $("nav").removeClass("expanded");
-  }
-
-});
-
 masks.forEach(mask => {
   let image = mask.querySelector("img");
   
