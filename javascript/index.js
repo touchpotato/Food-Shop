@@ -30,10 +30,6 @@ let tl = gsap.timeline({
   
 
 tl
-  .set("html", {"overflow": "hidden"})
-  .to(".intro", {opacity: 1, y: 0, duration: 1, stagger: .2})
-  .to(".overlay", {height: 0, display: "none", duration: 1, ease: "power1.in"})
-  .set("html", {"overflow-y": "auto"})
   .to("nav", {opacity: 1, y: 0, duration: 0.5})
   // .from(".section-landing", {width: 100 + "%", height: 100 + "vh", "border-radius": 0, margin: 0})
   .to(".welcome", {opacity: 1, y: 0, duration: 1})
